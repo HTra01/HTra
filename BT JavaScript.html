@@ -1,0 +1,50 @@
+<html>
+    <head>
+    <meta charset="utf-8"/>
+        <h2>Đăng kí thành viên</h2>
+    </head>
+    <style type="text/css">
+    label{
+        float: left;
+        width: 100%
+    }
+    input{
+        margin-bottom: 5px
+    }
+    </style>
+     <script>
+            function myFunction() {
+                var Username = document.getElementById("username").value;
+                var Email = document.getElementById("email").value;
+                var Password = "";
+              if(Username==""){
+                  document.getElementById("errorname").innerHTML="Vui lòng nhập tên";
+              } else{
+                  document.getElementById("errorname").innerHTML="";
+              }
+            }
+            if(Email=="")
+            {document.getElementById("errormail").includes="Vui lòng nhập mail";
+            } else{
+                document.getElementById("errormail").innerHTML="";
+            }
+            if(Password=="")
+            {document.getElementById("errorpass").includes="Vui lòng nhập mật khẩu";
+            } else{
+                document.getElementById("errorpass").innerHTML="";
+            }
+            </script>
+    <body>
+        <form action="" method="POST">
+            <label>Username: </label> <input type="text" name="username" id="username" value="">
+            <span id="errorname"></span> <br>
+            <label>Email: </label><input type="text" name="email" id="email" value="">
+            <span id="errormail"></span><br>
+            <label>Password:</label><input type="text" name="password" id="password" value="">
+            <span id="errorpass"></span><br>
+            <label> &nbsp</label>
+            <button onclick="myFunction(); return false ";>Sign up</button>
+          </form>
+         
+    </body>
+</html>
