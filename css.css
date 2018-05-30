@@ -1,0 +1,108 @@
+*{
+    margin:0; 
+    padding: 0;
+
+}
+
+body {
+    margin: 0px;
+    background-color: #e6f3ff;
+}
+
+
+/* Style the header */
+.header {
+    background-color:  #e6f3ff;
+    text-align: center;
+    padding: 2px;
+}
+
+.main {
+    background: rgb(108, 154, 228);
+    float: left;
+    width: 100%;
+}
+ 
+.main ul {
+    float: left;
+    list-style: none;
+}
+ 
+.main ul li {
+    position: relative;
+    float: left;
+}
+ 
+.main li a {
+    display: block;
+    color: #e6f3ff;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase; 
+    padding: 10px 15px;
+}
+ 
+.main li a:hover {
+    background: rgb(133, 170, 235);
+}
+ 
+.main li ul{
+    background: rgb(133, 170, 235);
+    position: absolute;
+    display: none;
+    width: 230px;
+}
+.main li ul a:hover{
+    color: rgb(255, 118, 118);
+}
+ 
+.main li:hover ul{
+    display: block;
+}
+ 
+.main ul li ul li {
+    width: 100%;
+}
+ 
+.main li:hover > a{
+    background: rgb(108, 154, 228);
+}
+
+  /* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+.column.left{
+    width: 20%;
+}
+
+.column.right{
+width: 30%;
+}
+
+.column.middle{
+    width: 50%;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:400px) {
+    .column {
+        width: 100%;
+    }
+}
+    /* Style the footer */
+    .footer {
+        background-image: url("https://stmed.net/sites/default/files/white-wallpapers-25354-6092577.jpg");
+        padding: 10px;
+        text-align: center;
+    }
