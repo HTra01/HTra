@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css.css" rel="stylesheet" type="text/css" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 7px-12px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 10px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+    <ul>
+      <li><a href="BTL.Trangchu.html##"> Trang chủ </a></li>
+      <li><a href="BTL.Gioithieu.html"> Giới thiệu </a></li>
+      <li><a href="##">Văn học Việt Nam</a>
+        <ul>
+          <li><a href="##">Thể loại</a></li>
+          <li><a href="BTL.Tacgiavietnam.htm">Tác giả</a></li>
+        </ul> 
+      </li>
+      <li><a href="##">Văn học nước ngoài</a>
+        <ul>
+          <li><a href="##">Thể loại</a></li>
+          <li><a href="lBTL.Tacgianuocngoai.html">Tác giả</a></li>
+        </ul> 
+      </li>
+      <li><a href="##">Thành viên</a>
+        <ul>
+          <li><a href="##">Đăng kí</a></li>
+          <li><a href="##">Đăng nhập</a></li>
+        </ul> 
+      </li>
+      <li><a href="BTL.Lienhe.html">Liên Hệ</a></li>
+    </ul>
+  </div> 
+  <div id="baner">
+    <img src="image/banner.jpg" height="600xp" width="100%"/>
+  </div> 
+
+<div class="main">
+<hr>
+<h2><a href="BTL.Trangchu.html">Thể loại</a></h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">Tất cả</button>
+  <button class="btn" onclick="filterSelection('cars')">Ngôn tình</button>
+  <button class="btn" onclick="filterSelection('nature')"> Truyện viễn tưởng</button>
+  <button class="btn" onclick="filterSelection('people')">Văn học</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+    <div class="column cars">
+        <div class="content">
+          <img src=".\Img\nt1.jpg" alt="Car" style="width:90%">
+          <h4>Thất tịch không mưa</h4>
+          <p>Giá: 75000đ</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+        <img src=".\Img\nt2.jpg" alt="Car" style="width:90%">
+          <h4>Hồ ly</h4>
+          <p>Giá: 78000đ</p>
+        </div>
+      </div>
+      <div class="column cars">
+        <div class="content">
+        <img src=".\Img\nt3.jpg" alt="Car" style="width:90%">
+          <h4>Đông cung</h4>
+          <p>Giá: 66000đ</p>
+        </div>
+      </div>
+      
+      <div class="column cars">
+          <div class="content">
+          <img src=".\Img\nt4.jpg" alt="Car" style="width:90%">
+            <h4>Ngập tràn yêu thương</h4>
+            <p>Giá: 65000đ</p>
+          </div>
+        </div>
+        <div class="column cars">
+            <div class="content">
+            <img src=".\Img\nt5.jpg" alt="Car" style="width:50%">
+              <h4>Nếu không là yêu</h4>
+              <p>Giá: 95000đ</p>
+            </div>
+          </div>
+          <div class="column cars">
+              <div class="content">
+              <img src=".\Img\nt6.jpg" alt="Car" style="width:50%">
+                <h4>Tam sinh tam thế</h4>
+                <p>Giá: 75000đ</p>
+              </div>
+            </div>
+  <div class="column nature">
+    <div class="content" >
+      <img src=".\Img\skh1.jpg" alt="Harry Potter" style="width: 35%">
+      <h4>Harry Potter</h4>
+      <p>Giá: 89000đ</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src=".\Img\skh2.jpg" alt="Trí tuệ giả tạo" style="width:40%">
+      <h4>Trí tuệ giả tạo</h4>
+      <p>Giá: 10000đ</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src=".\Img\skh6.jpg" alt="Nature" style="width:40%">
+      <h4>Hành tinh kì lạ</h4>
+      <p>Giá: 84000đ</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <img src=".\Img\skh4.jpg" alt="Nature" style="width:40%">
+      <h4>Thế giới bị quỷ ám</h4>
+      <p>Giá: 82000đ</p>
+    </div>
+  </div>
+    
+      <div class="column nature">
+        <div class="content">
+        <img src=".\Img\skh3.jpg" alt="Nature" style="width:30%">
+          <h4>Cuộc phiêu lưu của ping gơ lơ</h4>
+          <p>Giá: 93000đ</p>
+        </div>
+      </div>
+    
+      <div class="column nature">
+        <div class="content">
+        <img src=".\Img\skh5.jpg" alt="Nature" style="width:45%">
+          <h4>Các thế giới song song</h4>
+          <p>Giá: 85000đ</p>
+        </div>
+      </div>
+  
+
+  <div class="column people">
+    <div class="content">
+      <img src=".\Img\s8.jpg" alt="Car" style="width:45%">
+      <h4>Tuyển tập Ngô Tất Tố</h4>
+      <p>Giá: 85000đ</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src=".\Img\s9.jpg" alt="Car" style="width:50%">
+      <h4>Học tập đạo đức Hồ Chí Minh</h4>
+      <p>Giá: 90000đ</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src=".\Img\s2.jpg" alt="Car" style="width:60%">
+      <h4>Nếu như yêu</h4>
+      <p>Giá: 69000đ</p>
+    </div>
+  </div>
+  
+  <div class="column people">
+      <div class="content">
+      <img src=".\Img\s3.jpg" alt="Car" style="width:50%">
+        <h4>không còn thời gian để buồn</h4>
+        <p>Giá: 79000đ</p>
+      </div>
+    </div>
+    <div class="column people">
+        <div class="content">
+        <img src=".\Img\s5.jpg" alt="Car" style="width:60%">
+          <h4>Nếu anh là truyền thuyết của em</h4>
+          <p>Giá: 109000đ</p>
+        </div>
+      </div>
+      <div class="column people">
+          <div class="content">
+          <img src=".\Img\s7.jpg" alt="Car" style="width:70%">
+            <h4>Ai rồi cũng khác</h4>
+            <p>Giá: 99000đ</p>
+          </div>
+        </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<div class="footer">
+		<h2> Hotline: 1900xyz </h2>
+		<p> Sự hài lòng của bạn là hạnh phúc của chúng tôi </p>
+	</div>
+</body>
+</html>
